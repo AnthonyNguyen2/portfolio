@@ -18,18 +18,18 @@ library(ggplot2)  #helps visualize data
 ## reading the data for Dec 2020-Nov 2021
 
 
-Dec_2020 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202012-divvy-tripdata.csv")
-Jan_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202101-divvy-tripdata.csv")
-Feb_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202102-divvy-tripdata.csv")
-Mar_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202103-divvy-tripdata.csv")
-Apr_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202104-divvy-tripdata.csv")
-May_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202105-divvy-tripdata.csv")
-Jun_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202106-divvy-tripdata.csv")
-Jul_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202107-divvy-tripdata.csv")
-Aug_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202108-divvy-tripdata.csv")
-Sep_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202109-divvy-tripdata.csv")
-Oct_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202110-divvy-tripdata.csv")
-Nov_2021 <- read.csv("/Users/Anthony/Desktop/Google Data Analyst Certification/course 8 - Google Data Analytics Capstone Complete a Case Study/case study/raw data/original csv files/202111-divvy-tripdata.csv")
+Dec_2020 <- read.csv("/202012-divvy-tripdata.csv")
+Jan_2021 <- read.csv("/202101-divvy-tripdata.csv")
+Feb_2021 <- read.csv("/202102-divvy-tripdata.csv")
+Mar_2021 <- read.csv("/202103-divvy-tripdata.csv")
+Apr_2021 <- read.csv("/202104-divvy-tripdata.csv")
+May_2021 <- read.csv("/202105-divvy-tripdata.csv")
+Jun_2021 <- read.csv("/202106-divvy-tripdata.csv")
+Jul_2021 <- read.csv("/202107-divvy-tripdata.csv")
+Aug_2021 <- read.csv("/202108-divvy-tripdata.csv")
+Sep_2021 <- read.csv("/202109-divvy-tripdata.csv")
+Oct_2021 <- read.csv("/202110-divvy-tripdata.csv")
+Nov_2021 <- read.csv("/202111-divvy-tripdata.csv")
 
 #====================================================
 # STEP 2: WRANGLE DATA AND COMBINE INTO A SINGLE FILE
