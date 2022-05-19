@@ -164,23 +164,3 @@ SELECT *,
 		ROUND((Total_Cases/Population)*100,6) AS Infection_Percentage
 FROM PopulationVaccinated;
 
-
-
-
-
-
---copy copy; use for reference only!!!
-SELECT death.continent, 
-	death.location, 
-	death.date, 
-	death.population, 
-	vaccination.people_vaccinated AS Partially_Vaccinated,
-	vaccination.people_fully_vaccinated AS Fully_Vaccinated,
-	ROUND((CONVERT(BIGINT, vaccination.people_vaccinated)/death.population)*100,6) AS Partially_Vaccinated_Percentage,
-	ROUND((CONVERT(BIGINT, vaccination.people_fully_vaccinated)/death.population)*100,6) AS Fully_Vaccinated_Percentage,
-	ROUND(CONVERT(INT, vaccination.people_fully_vaccinated)/CONVERT(INT,vaccination.people_vaccinated)*100,6) AS Percentage_of_Fully_Vac_in_Vacc_People
-FROM PortfolioTest..CovidDeaths death -- Adding an alias to make calling this table easier
-JOIN PortfolioTest..CovidVaccinations vaccination -- Adding an alias to make calling this table easier
-ON death.location = vaccination.location
-	AND death.date = vaccination.date
-WHERE death.continent IS NOT NULL;
