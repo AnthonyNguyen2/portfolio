@@ -125,32 +125,7 @@ From Portfolio1..FleetSize Fleet
 Join Portfolio1..PolkData Polk
 	On Fleet.Target_Name = Polk.Target_Name;
 
---can't use Order By when creating views
 
 
 
 
-
-
-
------------------------------------------------------------------
--- copy copy; this section is for unused queries/redundant queries
--- What type of Fuel types do customers prefer from 2019?
-Select	Polk.Fuel_Name,
-		Sum(Polk.Unit_Count) as Total_Units
-From Portfolio1..FleetSize Fleet
-Join Portfolio1..PolkData Polk
-	On Fleet.Target_Name = Polk.Target_Name
-Where Year_Of_Registered_Date = 2019
-Group By Polk.Fuel_Name
-Order By 2 Desc;
-
-
--- Where are customers located from 2019?
-Select	Polk.Preferred_State,
-		Sum(Polk.Unit_Count) as Total_Units
-From Portfolio1..FleetSize Fleet
-Join Portfolio1..PolkData Polk
-	On Fleet.Target_Name = Polk.Target_Name
-Group By Polk.Preferred_State
-Order By 2 Desc;
